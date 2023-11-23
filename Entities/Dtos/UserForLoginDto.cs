@@ -1,18 +1,17 @@
-﻿using Core.DataAccess;
+﻿
 using Core.Entities;
-using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Abstract
+namespace Entities.Dtos
 {
-    public interface ICategoryDal: IEntityRepository<Category>
+    public class UserForLoginDto:IDto
     {
-
-
+        public string Email { get; set; }
+        public string Password { get; set; }
 
     }
 }

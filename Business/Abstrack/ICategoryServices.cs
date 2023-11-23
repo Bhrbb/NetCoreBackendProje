@@ -1,5 +1,4 @@
-﻿using Core.DataAccess;
-using Core.Entities;
+﻿using Core.Utilities.Results;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -7,12 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.Abstract
+namespace Business.Abstrack
 {
-    public interface ICategoryDal: IEntityRepository<Category>
+    public interface ICategoryServices
     {
-
-
-
+        IDataResult<List<Category>> GetList();
     }
 }
