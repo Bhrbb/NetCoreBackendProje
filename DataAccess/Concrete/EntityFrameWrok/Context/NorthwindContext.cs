@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Identity.Client;
+using Core.Entities.Concrete;
 
 namespace DataAccess.Concrete.EntityFrameWrok.Context
 {
